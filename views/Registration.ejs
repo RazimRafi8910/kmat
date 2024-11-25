@@ -4,7 +4,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HCT KMAT | HCT KMAT Registration</title>
+    <title>EMET |  EMET Registration</title>
     
         <link rel="icon" href="https://hctkmat.in/img/logo/favicon.png" sizes="32x32" type="image/png"> 
 
@@ -50,13 +50,13 @@ font-weight: bold
           <img src="./assets/hct.png" alt="logo" title="HCT KMAT" class="logo">
         </a>
              <div class="sp-menu">
-          <a class="reg-btn btn-main" href="https://hctkmat.in/registration"><i class="fa fa-pencil"></i> Register</a>
+          <a class="reg-btn btn-main" href="/registration"><i class="fa fa-pencil"></i> Register</a>
         </div>
         <!--<div class="sp-menu">-->
         <!--   <a class="reg-btn btn-main" href="../hallticket"><i class="fa fa-file-text"></i> Hallticket</a>-->
         <!--</div>-->
         <div class="sp-menu">
-           <a class="reg-btn btn-main" href="https://hctkmat.in/result"><i class="fa fa-file-text"></i> Result</a>
+           <a class="reg-btn btn-main" href="/"><i class="fa fa-file-text"></i> Result</a>
         </div>
         <!--<div class="sp-menu">-->
          <!-- <a class="reg-btn btn-main" href="http://hctkmat.in/mocktest"><i class="fa fa-file-text"></i><span> Mock test</span><span class="blinking" >Right Now</span></a> -->
@@ -78,14 +78,14 @@ font-weight: bold
             <div class="collapse navbar-collapse" id="myNavbar"> 
               <ul class="nav navbar-nav menu-nav">
                 <li> <a href="/">Home</a></li>
-                <li> <a href="./about.html">About KMAT</a></li>
-                <li><a href="./ExamPattern.html">Exam Pattern</a></li>
-                <li><a href="./PaperPattern.html">Paper Pattern</a></li>
-                <li><a href="./MarkingScheme.html">Marking Scheme</a></li>
-                <li><a href="./CutOff.html">Cut Off</a></li>
-                <li><a href="./registration">Registration</a></li>
-                <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>  
-                <li><a href="./Contact.html">Contact</a></li>      
+                    <li> <a href="/about">About EMET</a></li>
+                    <li><a href="/exam-pattern">Exam Pattern</a></li>
+                    <li><a href="/">Paper Pattern</a></li>
+                    <li><a href="/">Marking Scheme</a></li>
+                    <li><a href="/">Cut Off</a></li>
+                    <li><a href="/registration">Registration</a></li>
+                    <li><a href="/">Privacy Policy</a></li>  
+                    <li><a href="/contact">Contact</a></li>    
               </ul> 
             </div>
           </div>
@@ -160,7 +160,7 @@ font-weight: bold
 <div class="container-fluid pd-2-35 pd-bottom-20 in-main-col ">
 
   <div class="col-md-12 col-sm-12">
-    <h2 class="mrg-top-0 text-center">HCT KMAT Registration Form</h2>
+    <h2 class="mrg-top-0 text-center">Registration Form</h2>
 
     <div class="col-md-12 col-sm-12 col-xs-12 form-cont">
     <form method="post" action="https://hctkmat.in/registration/" id="add_details" onsubmit="event.preventDefault(); ">
@@ -175,106 +175,198 @@ font-weight: bold
         
         
         <div class="col-md-6 col-sm-12 form-col">
-          <label>KMAT Application ID</label> 
-          <input type="text" value="0" name="kmat_id" required="required"> 
+          <label>Mobile number</label> 
+          <input type="text"  name="mobile" required="required"> 
           
         </div>
 
-
-
-      <div class="col-md-12">
-      <label>Gender</label>
-      <div class="form-group">
-        <div class="radio-div"><input type="radio" name="gender" value="male" required="required">Male</div>
-        <div class="radio-div"><input type="radio" name="gender" value="female" required="required">Female</div>
-        <div class="radio-div"><input type="radio" name="gender" value="other" required="required">Other</div>
-        <div class="clear-fix"></div>
-      </div>
+        <div class="col-sm-12 col-sm-12 form-col">
+          <label>Email Id</label>
+          <input type="text" name="email" required="required"> 
       </div>
 
-      <div class="col-md-12 no-padding">
+      <div class="col-md-12 col-sm-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+        <label>Gender</label>
+        <div class="form-group mrg-btm-0">
+          <select name="gender" class="order-type" required="required">
+            <option value="select" selected="selected" disabled="disabled">Select</option>
+           
+            <option value="male">Male</option>      
+           <option value="female">Female</option>
+            <option value="other">Other</option>                
+         
+            
+          </select>
+          
+        </div>
+        </div>
         <div class="col-md-6 col-sm-12">
           <label>Date of Birth</label>
           <input type="date" name="dob" required="required">
         </div>
+      </div>
+      
+      
 
+      <div class="col-md-12 no-padding">
         <div class="col-md-6 col-sm-12">
           <label>Father/Guardian's Name</label>
-          <input type="text" name="guardian" required="required">
+          <input type="text" name="guardianName" required="required">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <label>Guardian mobile No</label>
+          <input type="text" name="guardianNumber" required="required">
         </div>
       </div>
 
       <div class="col-md-12 no-padding">
+
         <div class="col-md-6 col-sm-12">
           <label>Religion</label>
-          <input type="text" name="religion" required="required">
-        </div>        
+          <div class="form-group mrg-btm-0">
+            <select name="religion" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="Hindu">Hindu</option>      
+             <option value="Muslim">Muslim</option>
+              <option value="Christian">Christian</option>                
+              <option value="other">Other</option>                
+            </select>
+          </div>
+          </div>     
+
         <div class="col-md-6 col-sm-12">
-          <label>Whether belongs to SC/ST/OBC</label>
+          <label>Caste</label>
           <input type="text" name="caste" required="required">
         </div>
       </div>
 
       <div class="col-md-12 no-padding">
         <div class="col-md-6 col-sm-12">
-          <label>Qualification/Class in which you are studying</label>
-          <input type="text" name="qualification" required="required">
+          <label>Annual income</label>
+          <input type="text" name="income" required="required">
         </div>        
         <div class="col-md-6 col-sm-12">
-          <label>Name of the college &amp; University </label>
-          <input type="text" name="college" required="required">
+          <label>House Name</label>
+          <input type="text" name="houseName" required="required">
         </div>
       </div>
 
       <div class="col-md-12 no-padding">
         <div class="col-md-6 col-sm-12">
-          <label>Mobile Number </label>
-          <input type="text" name="phone" required="required">
+          <label>Street Name</label>
+          <input type="text" name="streetName" required="required">
         </div>        
         <div class="col-md-6 col-sm-12">
-          <label>WhatsApp Number </label>
-          <input type="text" name="mobile" required="required">
+          <label>Place</label>
+          <input type="text" name="place" required="required">
         </div>
       </div>
 
-      <div class="col-sm-12 col-sm-12 form-col">
-          <label>Email Id</label>
-          <input type="text" name="email" required="required"> 
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>City</label>
+          <input type="text" name="city" required="required">
+        </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>Pincode</label>
+          <input type="text" name="pincode" required="required">
+        </div>
       </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>Post office</label>
+          <input type="text" name="postOffice" required="required">
+        </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>District</label>
+          <input type="text" name="district" required="required">
+        </div>
+      </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>State</label>
+          <input type="text" name="state" required="required">
+        </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>Category</label>
+          <div class="form-group mrg-btm-0">
+            <select name="category" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="General">General</option>      
+              <option value="OBC">OBC</option>
+              <option value="SC/ST">SC/ST</option>                               
+            </select>
+          </div>
+          </div>
+      </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>Applied for</label>
+          <div class="form-group mrg-btm-0">
+            <select name="appliedFor" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="General">General</option>      
+              <option value="OBC">OBC</option>
+              <option value="SC/ST">SC/ST</option>                               
+            </select>
+          </div>
+          </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>Stream studied</label>
+          <div class="form-group mrg-btm-0">
+            <select name="streamStudied" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="science">Science</option>      
+              <option value="commerce">Commerce</option>
+              <option value="humanities">Humanities</option>                               
+            </select>
+          </div>
+          </div>
+      </div>
+    
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>College or School name </label>
+          <input type="text" name="college" required="required">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <label>Interested Degree course</label>
+          <div class="form-group mrg-btm-0">
+            <select name="interestedDegree" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="science">Science</option>      
+              <option value="commerce">Commerce</option>
+              <option value="humanities">Humanities</option>                               
+            </select>
+          </div>
+          </div>       
+        
+      </div>
+      
 
       <div class="col-md-12 no-padding">
        <div class="col-md-6 col-sm-12">
-        <label>Address for Correspondence</label>
-        <textarea name="address" required="required"></textarea>
+        <label>School Address</label>
+        <textarea name="schoolAddress" required="required"></textarea>
        </div>
        <div class="col-md-6 col-sm-12 no-padding">
 
-        <div class="col-md-12 col-sm-12">
-          <label>Select the place you prefer for KMAT examination Center</label>
-          <div class="form-group mrg-btm-0">
-            <select name="place" class="order-type" required="required">
-              <option value="select" selected="selected" disabled="disabled">Select</option>
-              <option value="Kannur">1.Kannur</option>
-              <option value="Malappuram">2.Malappuram</option>
-              <option value="Thrissur">3.Thrissur</option>
-              <option value="Ernakulam">4.Ernakulam</option>
-              <option value="Kottayam">5.Kottayam </option>
-              <option value="Alappuzha">6.Alappuzha </option>
-              <option value="Thiruvananthapuram">7.Thiruvananthapuram </option>              
-            </select>
-          </div>
-        </div>
+        
     
         <div class="col-md-12 col-sm-12">
-          <label>Select Preffered Batch for KMAT Coaching</label>
+          <label>NLP training required</label>
           <div class="form-group mrg-btm-0">
-            <select name="batch" class="order-type" required="required">
+            <select name="NLP-training" class="order-type" required="required">
               <option value="select" selected="selected" disabled="disabled">Select</option>
              
-              <option value="B01 | REGULAR BATCH | ITM CAMPUS, MAYYIL (SATURDAY AND SUNDAY) "> B01 | REGULAR BATCH | ITM CAMPUS, MAYYIL  </option>      
-             <option value="B02 | RESIDENTIAL BATCH | ITM CAMPUS, MAYYIL ">  B02 | RESIDENTIAL BATCH | ITM CAMPUS, MAYYIL </option>
-              <option value="B03 | ONLINE BATCH)  "> B03 | ONLINE BATCH </option>                
-           
+              <option value=""> Yes </option>      
+             <option value=""> No </option>              
               
             </select>
             
@@ -296,7 +388,21 @@ font-weight: bold
 </div>
 <!--content-->
 
-
+<!-- <div class="col-md-12 col-sm-12">
+  <label>Select the place you prefer for KMAT examination Center</label>
+  <div class="form-group mrg-btm-0">
+    <select name="place" class="order-type" required="required">
+      <option value="select" selected="selected" disabled="disabled">Select</option>
+      <option value="Kannur">1.Kannur</option>
+      <option value="Malappuram">2.Malappuram</option>
+      <option value="Thrissur">3.Thrissur</option>
+      <option value="Ernakulam">4.Ernakulam</option>
+      <option value="Kottayam">5.Kottayam </option>
+      <option value="Alappuzha">6.Alappuzha </option>
+      <option value="Thiruvananthapuram">7.Thiruvananthapuram </option>              
+    </select>
+  </div>
+</div> -->
 <!--footer-->
 <footer>
   <div class="container-fluid pd-2-35 top-footer">
@@ -309,26 +415,26 @@ font-weight: bold
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-quick">
         <p class="foot-head">Quick Links</p>
         <ul class="quick-link">
-                    <li><a href="https://hctkmat.in/exam-pattern">Exam Pattern</a></li>
-                    <li><a href="https://hctkmat.in/paper-pattern">Paper Pattern</a></li>
-                    <li><a href="https://hctkmat.in/marking-scheme">Marking Scheme</a></li>
-                    <li><a href="https://hctkmat.in/cut-off">Cut Off</a></li>
+          <li><a href="/exam-pattern">Exam Pattern</a></li>
+          <li><a href="/">Paper Pattern</a></li>
+          <li><a href="/">Marking Scheme</a></li>
+          <li><a href="/">Cut Off</a></li>
         </ul>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 get-in-touch">
         <p class="foot-head">Get In Touch</p>
         <div class="box">
           <div class="sub-box1"><img src="./assets/call1-b.png" alt="icon"></div>
-          <div class="sub-box">8606991777</div>
+          <div class="sub-box">8086704111</div>
         </div>
       
         <div class="box">
           <div class="sub-box1"><img src="./assets/call1-b.png" alt="icon"></div>
-          <div class="sub-box">8606991888</div>
+          <div class="sub-box">8086704222</div>
         </div>
         <div class="box">
           <div class="sub-box1"><img src="./assets/mail-b.png" alt="icon"></div>
-          <div class="sub-box">hctkmat@gmail.com</div>
+          <div class="sub-box">emetsrc@gmail.com</div>
         </div>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-address">
@@ -338,11 +444,10 @@ font-weight: bold
           <div class="sub-box1"><img src="./assets/home.png" alt="icon"></div>
           <div class="sub-box">
         <p class="address">
-        Hira Charitable Trust,<br>
-        Pavanoormotta P.O, <br>
-        Mayyil, Kannur,<br>
-        PIN - 670 602,<br>
-        Kerala. 
+        EYES TRUST <br>
+        MJ HUB CORPORATE CAMPUS, <br>
+        KOLAPPA PO, IRIKKUR PO, KANNUR, KERALA <br>
+        PIN : 670593 <br>
         </p>
         </div>
         </div>
@@ -421,54 +526,89 @@ function cancel()
             <td class="mdl-td-c"><span>Name of the Student</span></td>
             <td class="left"><span>${form["name"].value}</span></td>
             <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>KMAT Application ID</span></td>
-            <td class="left"><span>${form["kmat_id"].value}</span></td>
+            <td class="mdl-td-c"><span>Mobile No</span></td>
+            <td class="left"><span>${form["mobile"].value}</span></td>
         </tr>
         <tr> 
+            <td class="mdl-td-c"><span>Email id</span></td>
+            <td class="left"><span>${form["email"].value}</span></td>
+            <td class="mdl-td"></td>
             <td class="mdl-td-c"><span>Gender</span></td>
             <td class="left"><span>${form["gender"].value}</span></td>
-            <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Date of Birth</span></td>
-            <td class="left"><span>${form["dob"].value}</span></td>
         </tr>
         <tr>
-            <td class="mdl-td-c"><span>Father/Guardian's Name</span></td>
-            <td class="left"><span>${form["guardian"].value}</span></td>
+            <td class="mdl-td-c"><span>DOB</span></td>
+            <td class="left"><span>${form["dob"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Fater/Guradian Name</span></td>
+            <td class="left"><span>${form["guardianName"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Guradian No</span></td>
+            <td class="left"><span>${form["guardianNumber"].value}</span></td>
             <td class="mdl-td"></td>
             <td class="mdl-td-c"><span>Religion</span></td>
             <td class="left"><span>${form["religion"].value}</span></td>
         </tr>
         <tr>
-            <td class="mdl-td-c"><span>Whether belongs to SC/ST/OBC</span></td>
+            <td class="mdl-td-c"><span>Caste</span></td>
             <td class="left"><span>${form["caste"].value}</span></td>
             <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Qualification/Class in which you are studying</span></td>
-            <td class="left"><span>${form["qualification"].value}</span></td>
+            <td class="mdl-td-c"><span>Annual income</span></td>
+            <td class="left"><span>${form["income"].value}</span></td>
         </tr>
         <tr>
-            <td class="mdl-td-c"><span>Name of the Institute & University</span></td>
-            <td class="left"><span>${form["college"].value}</span></td>
+            <td class="mdl-td-c"><span>House name</span></td>
+            <td class="left"><span>${form["houseName"].value}</span></td>
             <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Phone Number (Landline)</span></td>
-            <td class="left"><span>${form["phone"].value}</span></td>
+            <td class="mdl-td-c"><span>Street name</span></td>
+            <td class="left"><span>${form["streetName"].value}</span></td>
         </tr>
         <tr>
-            <td class="mdl-td-c"><span>Phone Number (Mobile)</span></td>
-            <td class="left"><span>${form["mobile"].value}</span></td>
-            <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Email Id</span></td>
-            <td class="left"><span>${form["email"].value}</span></td>
-        </tr>
-        <tr>
-            <td class="mdl-td-c"><span>Address for Correspondence</span></td>
-            <td class="left"><span>${form["address"].value}</span></td>
-            <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Select the place you prefer for coaching</span></td>
+            <td class="mdl-td-c"><span>Place</span></td>
             <td class="left"><span>${form["place"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>city</span></td>
+            <td class="left"><span>${form["city"].value}</span></td>
         </tr>
         <tr>
-            <td class="mdl-td-c"><span>Select batch</span></td>
-            <td class="left"><span>${form["batch"].value}</span></td>
+            <td class="mdl-td-c"><span>pincode</span></td>
+            <td class="left"><span>${form["pincode"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Post office</span></td>
+            <td class="left"><span>${form["postOffice"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>District</span></td>
+            <td class="left"><span>${form["district"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>State</span></td>
+            <td class="left"><span>${form["state"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Category</span></td>
+            <td class="left"><span>${form["category"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Applied For</span></td>
+            <td class="left"><span>${form["appliedFor"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Stream studied</span></td>
+            <td class="left"><span>${form["streamStudied"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Collage or School name</span></td>
+            <td class="left"><span>${form["college"].value}</span></td>
+        </tr> 
+        <tr>
+            <td class="mdl-td-c"><span>School Address</span></td>
+            <td class="left"><span>${form["schoolAddress"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Interested Degree course</span></td>
+            <td class="left"><span>${form["interestedDegree"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>NLP Training required</span></td>
+            <td class="left"><span>${form["NLP-training"].value}</span></td>
             <td class="mdl-td"></td>   
         </tr>
     </table>
@@ -607,28 +747,40 @@ function cancel()
 <script type="text/javascript">
    
    document.getElementById('confirm_test').addEventListener('click', function () {
+
+    console.log("called")
     // Gather form data
     const form = document.forms["add_details"];
     const formData = {
         name: form["name"].value,
-        kmat_id: form["kmat_id"].value,
+        kmat_id: form["mobile"].value,
+        gender: form["email"].value,
         gender: form["gender"].value,
         dob: form["dob"].value,
-        guardian: form["guardian"].value,
+        guardianName: form["guardianName"].value,
+        guardianNumber: form["guardianNumber"].value,
         religion: form["religion"].value,
         caste: form["caste"].value,
-        qualification: form["qualification"].value,
-        college: form["college"].value,
-        phone: form["phone"].value,
-        mobile: form["mobile"].value,
-        email: form["email"].value,
-        address: form["address"].value,
+        income: form["income"].value,
+        houseName: form["houseName"].value,
+        streetName: form["streetName"].value,
         place: form["place"].value,
-        batch: form["batch"].value
+        city: form["city"].value,
+        pincode: form["pincode"].value,
+        postOffice: form["postOffice"].value,
+        district: form["district"].value,
+        state: form["state"].value,
+        category: form["category"].value,
+        appliedFor: form["appliedFor"].value,
+        streamStudied: form["streamStudied"].value,
+        collage: form["college"].value,
+        schoolAddress: form["schoolAddress"].value,
+        interestedDegree: form["interestedDegree"].value,
+        NLPtraining: form["NLP-training"].value,
     };
 
     // Make the POST request with fetch
-    fetch("", {
+    fetch("/register", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -639,10 +791,12 @@ function cancel()
     .then(data => {
         console.log(data);
         // Display success message
-        const msg = `<p style="color:orange;"><i><b>Thank you for registering with HCT KMAT Coaching!<br>
-                     Kindly pay the Registration fee. Whatsapp 8606991777 for the details</b></i></p>`;
+        const msg = `<p style="color:orange;"><i><b>your registration is success, <br> Thank you for registering with EMET!<br></b></i></p>`;
         document.getElementById('btn1').style.display = 'block';
         document.getElementById('ssss').innerHTML = msg;
+        setTimeout(() => {
+            location.reload();
+        }, 5000);
     })
     .catch(error => {
         console.error("Error:", error);
