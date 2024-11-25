@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://hctkmat.in/registration/ -->
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HCT KMAT | HCT KMAT Registration</title>
+    
+        <link rel="icon" href="https://hctkmat.in/img/logo/favicon.png" sizes="32x32" type="image/png"> 
+
+    <!-- CSS Stylesheets -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/homestyle.css" rel="stylesheet" type="text/css">
+
+    <!-- FONT -->
+    <link href="./assets/stylesheet.css" rel="stylesheet" type="text/css">   
+</head>
+<body class="in-body" data-new-gr-c-s-check-loaded="14.1209.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+
+<!--header-->
+  <style>
+      .blinking{
+	animation:blinkingText 0.8s infinite;
+	
+position: absolute;
+background-color: #f4ee36;
+font-size: 10px;
+padding: 1px 2px;
+border-radius: 3px;
+margin-left: -30px;
+margin-top: -20px;
+font-weight: bold
+}
+@keyframes blinkingText{
+	0%{		color: red;	}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color: red;	}
+}
+      
+  </style>
+  <header>
+    <div class="container-fluid no-padding hd-main">
+
+      <div class="container-fluid header-top pd-2-35">
+        <a class="logo-div" href="https://hctkmat.in/">
+          <img src="./assets/hct.png" alt="logo" title="HCT KMAT" class="logo">
+        </a>
+             <div class="sp-menu">
+          <a class="reg-btn btn-main" href="https://hctkmat.in/registration"><i class="fa fa-pencil"></i> Register</a>
+        </div>
+        <!--<div class="sp-menu">-->
+        <!--   <a class="reg-btn btn-main" href="../hallticket"><i class="fa fa-file-text"></i> Hallticket</a>-->
+        <!--</div>-->
+        <div class="sp-menu">
+           <a class="reg-btn btn-main" href="https://hctkmat.in/result"><i class="fa fa-file-text"></i> Result</a>
+        </div>
+        <!--<div class="sp-menu">-->
+         <!-- <a class="reg-btn btn-main" href="http://hctkmat.in/mocktest"><i class="fa fa-file-text"></i><span> Mock test</span><span class="blinking" >Right Now</span></a> -->
+        <!--</div>-->
+        <div class="clear-fix"></div>
+      </div>
+ 
+      <div class="container-fluid  pd-2-35 menu-cont">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid nav-cont no-padding">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button> 
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar"> 
+              <ul class="nav navbar-nav menu-nav">
+                <li> <a href="/">Home</a></li>
+                <li> <a href="./about.html">About KMAT</a></li>
+                <li><a href="./ExamPattern.html">Exam Pattern</a></li>
+                <li><a href="./PaperPattern.html">Paper Pattern</a></li>
+                <li><a href="./MarkingScheme.html">Marking Scheme</a></li>
+                <li><a href="./CutOff.html">Cut Off</a></li>
+                <li><a href="./registration">Registration</a></li>
+                <li><a href="./PrivacyPolicy.html">Privacy Policy</a></li>  
+                <li><a href="./Contact.html">Contact</a></li>      
+              </ul> 
+            </div>
+          </div>
+        </nav>
+        <div class="clear-fix"></div>
+      </div>
+
+    </div>
+  </header>
+
+
+<!--header-->
+
+<!--content-->
+<div class="container-fluid no-padding">
+<div class="container-fluid pd-2-35 h1-cont"><div class="col-md-12 col-sm-12"><h1>Registration</h1></div></div>
+</div>
+
+<!--action-->
+
+   
+<!--end_of_action-->
+
+<div class="modal fade in" id="ALERT" onclick="cancel()" role="dialog" style="display:none;background:rgba(0,0,0,0.6);overflow:auto;">
+                    <div class="modal-dialog" style="margin-top: 0%;text-align: center;">
+                        <div class="modal-content">
+                            <div id="modal-body"> 
+                            <!--<button type="button" class="close" onclick="cancel()" >&times;</button>-->
+                            <h1 class="text-center" style="color: blue;">HCT KMAT Registration 2024</h1>
+                            <div id="test"></div>  
+                            <!-- <h4 class="text-center" > Application fee of Rs. 180/- only</h4>-->
+                      <div class="text-center"><button class="btn sub-btn reg-btn" type="submit" name="confirm" id="confirm_test">confirm &nbsp;</button>
+                       <button class="btn sub-btn reg-btn" type="button" name="Back" onclick="cancel()">Back &nbsp;</button></div>
+                       </div>
+                        </div>
+                    </div>
+                </div>
+   
+ 
+      
+      
+        <center>
+       <div id="btn1" class="modal fade in" style="display: none;background:rgba(0,0,0,0.6);overflow:auto;">
+        <div class="modal-dialog" style="margin-top: 18%;text-align: center;">
+                        <div class="modal-content">
+                            <div class="modal-body">
+
+  
+  <div id="ssss">
+
+ </div>
+ </div></div></div>
+</div>
+ </center>
+ <center>
+       <div id="btn2" class="modal fade in" style="display: none;background:rgba(0,0,0,0.6);overflow:auto;">
+        <div class="modal-dialog" style="margin-top: 18%;text-align: center;">
+                        <div class="modal-content">
+                            <div class="modal-body">
+
+  
+                           <div id="ffff">
+
+                      </div>
+                   </div></div></div>
+      </div>
+ </center>
+
+
+
+<div class="container-fluid no-padding">
+<div class="container-fluid pd-2-35 pd-bottom-20 in-main-col ">
+
+  <div class="col-md-12 col-sm-12">
+    <h2 class="mrg-top-0 text-center">HCT KMAT Registration Form</h2>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 form-cont">
+    <form method="post" action="https://hctkmat.in/registration/" id="add_details" onsubmit="event.preventDefault(); ">
+        <!--    
+      -->
+
+ 
+        <div class="col-md-6 col-sm-12 form-col">
+          <label>Name of the Student</label>
+          <input type="text" name="name" required="required"> 
+        </div>
+        
+        
+        <div class="col-md-6 col-sm-12 form-col">
+          <label>KMAT Application ID</label> 
+          <input type="text" value="0" name="kmat_id" required="required"> 
+          
+        </div>
+
+
+
+      <div class="col-md-12">
+      <label>Gender</label>
+      <div class="form-group">
+        <div class="radio-div"><input type="radio" name="gender" value="male" required="required">Male</div>
+        <div class="radio-div"><input type="radio" name="gender" value="female" required="required">Female</div>
+        <div class="radio-div"><input type="radio" name="gender" value="other" required="required">Other</div>
+        <div class="clear-fix"></div>
+      </div>
+      </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>Date of Birth</label>
+          <input type="date" name="dob" required="required">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <label>Father/Guardian's Name</label>
+          <input type="text" name="guardian" required="required">
+        </div>
+      </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>Religion</label>
+          <input type="text" name="religion" required="required">
+        </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>Whether belongs to SC/ST/OBC</label>
+          <input type="text" name="caste" required="required">
+        </div>
+      </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>Qualification/Class in which you are studying</label>
+          <input type="text" name="qualification" required="required">
+        </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>Name of the college &amp; University </label>
+          <input type="text" name="college" required="required">
+        </div>
+      </div>
+
+      <div class="col-md-12 no-padding">
+        <div class="col-md-6 col-sm-12">
+          <label>Mobile Number </label>
+          <input type="text" name="phone" required="required">
+        </div>        
+        <div class="col-md-6 col-sm-12">
+          <label>WhatsApp Number </label>
+          <input type="text" name="mobile" required="required">
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-sm-12 form-col">
+          <label>Email Id</label>
+          <input type="text" name="email" required="required"> 
+      </div>
+
+      <div class="col-md-12 no-padding">
+       <div class="col-md-6 col-sm-12">
+        <label>Address for Correspondence</label>
+        <textarea name="address" required="required"></textarea>
+       </div>
+       <div class="col-md-6 col-sm-12 no-padding">
+
+        <div class="col-md-12 col-sm-12">
+          <label>Select the place you prefer for KMAT examination Center</label>
+          <div class="form-group mrg-btm-0">
+            <select name="place" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="Kannur">1.Kannur</option>
+              <option value="Malappuram">2.Malappuram</option>
+              <option value="Thrissur">3.Thrissur</option>
+              <option value="Ernakulam">4.Ernakulam</option>
+              <option value="Kottayam">5.Kottayam </option>
+              <option value="Alappuzha">6.Alappuzha </option>
+              <option value="Thiruvananthapuram">7.Thiruvananthapuram </option>              
+            </select>
+          </div>
+        </div>
+    
+        <div class="col-md-12 col-sm-12">
+          <label>Select Preffered Batch for KMAT Coaching</label>
+          <div class="form-group mrg-btm-0">
+            <select name="batch" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+             
+              <option value="B01 | REGULAR BATCH | ITM CAMPUS, MAYYIL (SATURDAY AND SUNDAY) "> B01 | REGULAR BATCH | ITM CAMPUS, MAYYIL  </option>      
+             <option value="B02 | RESIDENTIAL BATCH | ITM CAMPUS, MAYYIL ">  B02 | RESIDENTIAL BATCH | ITM CAMPUS, MAYYIL </option>
+              <option value="B03 | ONLINE BATCH)  "> B03 | ONLINE BATCH </option>                
+           
+              
+            </select>
+            
+         
+          </div>
+        </div>
+             
+       </div>
+      </div>
+
+        <div class="col-sm-12 col-sm-12 text-center"><button class="btn sub-btn reg-btn btn-main" type="submit" name="submit" id="add">Submit &nbsp;<i class="fa fa-chevron-circle-right"></i></button></div>                                    
+      </form>
+    </div>
+
+  </div>
+
+
+</div>
+</div>
+<!--content-->
+
+
+<!--footer-->
+<footer>
+  <div class="container-fluid pd-2-35 top-footer">
+    <div class="col-md-12 no-padding">
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-vision-col">
+        <p class="foot-head">KMAT KERALA</p>
+        <p class="gen-para ft-vision">KMAT Kerala is the entrance examination for candidates seeking admission to various MBA courses in Kerala.</p>
+        <a class="more transition" href="https://hctkmat.in/about-kmat">Read More &nbsp;<i class="fa fa-chevron-circle-right"></i></a>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-quick">
+        <p class="foot-head">Quick Links</p>
+        <ul class="quick-link">
+                    <li><a href="https://hctkmat.in/exam-pattern">Exam Pattern</a></li>
+                    <li><a href="https://hctkmat.in/paper-pattern">Paper Pattern</a></li>
+                    <li><a href="https://hctkmat.in/marking-scheme">Marking Scheme</a></li>
+                    <li><a href="https://hctkmat.in/cut-off">Cut Off</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 get-in-touch">
+        <p class="foot-head">Get In Touch</p>
+        <div class="box">
+          <div class="sub-box1"><img src="./assets/call1-b.png" alt="icon"></div>
+          <div class="sub-box">8606991777</div>
+        </div>
+      
+        <div class="box">
+          <div class="sub-box1"><img src="./assets/call1-b.png" alt="icon"></div>
+          <div class="sub-box">8606991888</div>
+        </div>
+        <div class="box">
+          <div class="sub-box1"><img src="./assets/mail-b.png" alt="icon"></div>
+          <div class="sub-box">hctkmat@gmail.com</div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-address">
+        <p class="foot-head">Contact Address</p>
+        <i class="it-font">For all inquiries please contact</i>
+        <div class="box">
+          <div class="sub-box1"><img src="./assets/home.png" alt="icon"></div>
+          <div class="sub-box">
+        <p class="address">
+        Hira Charitable Trust,<br>
+        Pavanoormotta P.O, <br>
+        Mayyil, Kannur,<br>
+        PIN - 670 602,<br>
+        Kerala. 
+        </p>
+        </div>
+        </div>
+
+      </div>
+     
+    </div>
+  </div>
+
+  <div class="container-fluid pd-2-35 bottom-footer">
+    <div class="col-md-6 col-sm-6 col-xs-12 rights-col"><p class="rights">© 2019 <span class="blue">HCT KMAT.</span>&nbsp; All rights reserved.</p></div>
+    <div class="col-md-6 col-sm-6 col-xs-12 power-col text-right">
+      <p class="powered-by text-right">Powered by:
+        <a href="http://srvinfotech.com/" class="srv" target="_blank"><span title="SRV InfoTech">SRV InfoTech</span></a>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    <!-- JavaScript Includes -->
+    <script src="./assets/jquery-3.3.1.min.js.download"></script>
+    <script src="./assets/bootstrap.min.js.download"></script>
+    <script src="./assets/modernizr-2.8.3-respond-1.4.2.min.js.download"></script>
+
+<!--footer-->
+
+
+
+
+ <script type="text/javascript">
+function cancel()
+{
+    document.getElementById('ALERT').style.display = 'none';
+}
+</script>
+
+<script>
+ // $(document).ready(function(){
+
+ document.getElementById('add').addEventListener('click', function () {
+    // Prevent default form submission and handle the form data
+    document.getElementById('add_details').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Show the alert element
+        document.getElementById('ALERT').style.display = 'block';
+    });
+
+    // Gather form data
+    var form = document.forms["add_details"];
+    var x = `
+    <center>
+    <style>
+        table {
+            width: 100%;
+        }
+        .mdl-td-c {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .left {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .mdl-td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ffff;
+        }
+    </style>
+    <table>
+        <tr>
+            <td class="mdl-td-c"><span>Name of the Student</span></td>
+            <td class="left"><span>${form["name"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>KMAT Application ID</span></td>
+            <td class="left"><span>${form["kmat_id"].value}</span></td>
+        </tr>
+        <tr> 
+            <td class="mdl-td-c"><span>Gender</span></td>
+            <td class="left"><span>${form["gender"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Date of Birth</span></td>
+            <td class="left"><span>${form["dob"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Father/Guardian's Name</span></td>
+            <td class="left"><span>${form["guardian"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Religion</span></td>
+            <td class="left"><span>${form["religion"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Whether belongs to SC/ST/OBC</span></td>
+            <td class="left"><span>${form["caste"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Qualification/Class in which you are studying</span></td>
+            <td class="left"><span>${form["qualification"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Name of the Institute & University</span></td>
+            <td class="left"><span>${form["college"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Phone Number (Landline)</span></td>
+            <td class="left"><span>${form["phone"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Phone Number (Mobile)</span></td>
+            <td class="left"><span>${form["mobile"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Email Id</span></td>
+            <td class="left"><span>${form["email"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Address for Correspondence</span></td>
+            <td class="left"><span>${form["address"].value}</span></td>
+            <td class="mdl-td"></td>
+            <td class="mdl-td-c"><span>Select the place you prefer for coaching</span></td>
+            <td class="left"><span>${form["place"].value}</span></td>
+        </tr>
+        <tr>
+            <td class="mdl-td-c"><span>Select batch</span></td>
+            <td class="left"><span>${form["batch"].value}</span></td>
+            <td class="mdl-td"></td>   
+        </tr>
+    </table>
+    </center>`;
+
+    // Insert the HTML into the element with ID 'test'
+    document.getElementById('test').innerHTML = x;
+});
+
+
+//   $('#add').on('click',function()
+//   {
+//     // alert(1);
+//     $(() => $('#add_details').submit(event => {
+//   event.preventDefault();
+//   // alert('Form is valid!');
+//    $('#ALERT').show();
+// }));
+   
+//     // $('#ALERT').show();
+
+//  var formData = new FormData($('#add_details')[0]);
+//  var x = `
+
+//    <center>
+//    <style>
+// table {
+ 
+//   width: 100%;
+// }
+
+// .mdl-td-c{
+//   padding: 10px;
+//   text-align: left;
+//   border-bottom: 1px solid #ddd;
+// }
+// .left{
+//   padding: 10px;
+//   text-align: left;
+//   border-bottom: 1px solid #ddd;
+// }
+// .mdl-td{
+//   padding: 10px;
+//   text-align: left;
+//   border-bottom: 1px solid #ffff;
+// }
+
+
+// </style>
+   
+// <table>
+       
+//        <tr>
+//        <td class="mdl-td-c"><span>Name of the Student</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["name"].value+`<span></td>
+//       <td class="mdl-td"></td>
+     
+//       <td class="mdl-td-c"><span>KMAT Application ID</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["kmat_id"].value+`<span></td>
+//       </tr>
+//         <tr> 
+//       <td class="mdl-td-c"><span>Gender</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["gender"].value+`<span></td>  
+//         <td class="mdl-td"></td>
+//       <td class="mdl-td-c"><span>Date of Birth</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["dob"].value+`<span></td>
+//       </tr>
+//        <tr>
+       
+//       <td class="mdl-td-c"><span>Father/Guardian's Name</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["guardian"].value+`<span></td>
+//       <td class="mdl-td"></td>
+//       <td class="mdl-td-c"><span>Religion</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["religion"].value+`<span></td>
+      
+//        </tr>
+       
+//        <tr>
+//        <td class="mdl-td-c"><span>Whether belongs to SC/ST/OBC</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["caste"].value+`<span></td>
+//        <td class="mdl-td"></td>
+//         <td class="mdl-td-c"><span>Qualification/Class in which you are studying</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["qualification"].value+`<span></td> 
+//     </tr>
+//       <tr>
+
+//       <td class="mdl-td-c"><span>Name of the Institute & University </span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["college"].value+`<span></td>
+//       <td class="mdl-td"></td>
+//        <td class="mdl-td-c"><span>Phone Number (Landline)</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["phone"].value+`<span></td>
+//        </tr>
+//           <tr>
+
+//        <td class="mdl-td-c"><span>Phone Number (Mobile)</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["mobile"].value+`<span></td>
+//     <td class="mdl-td"></td>
+//        <td class="mdl-td-c"><span>Email Id</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["email"].value+`<span></td>   
+//        </tr>
+//        <tr>
+//        <td class="mdl-td-c"><span>Address for Correspondence</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["address"].value+`<span></td>
+//       <td class="mdl-td"></td>
+//        <td class="mdl-td-c"><span>Select the place you prefer for coaching</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["place"].value+`<span></td>
+//       </tr>
+//        <td class="mdl-td-c"><span>Select batch</span></td>
+      
+//       <td class="left"><span>`+document.forms["add_details"]["batch"].value+`<span></td>
+//        <td class="mdl-td"></td>   
+//        </tr>
+      
+//       <table></center>`;
+//                                     // alert(x);
+
+//   $('#test').html(x);
+ 
+//   });
+
+</script>
+<script type="text/javascript">
+   
+   document.getElementById('confirm_test').addEventListener('click', function () {
+    // Gather form data
+    const form = document.forms["add_details"];
+    const formData = {
+        name: form["name"].value,
+        kmat_id: form["kmat_id"].value,
+        gender: form["gender"].value,
+        dob: form["dob"].value,
+        guardian: form["guardian"].value,
+        religion: form["religion"].value,
+        caste: form["caste"].value,
+        qualification: form["qualification"].value,
+        college: form["college"].value,
+        phone: form["phone"].value,
+        mobile: form["mobile"].value,
+        email: form["email"].value,
+        address: form["address"].value,
+        place: form["place"].value,
+        batch: form["batch"].value
+    };
+
+    // Make the POST request with fetch
+    fetch("", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.text()) // Assuming the server returns a plain text response
+    .then(data => {
+        console.log(data);
+        // Display success message
+        const msg = `<p style="color:orange;"><i><b>Thank you for registering with HCT KMAT Coaching!<br>
+                     Kindly pay the Registration fee. Whatsapp 8606991777 for the details</b></i></p>`;
+        document.getElementById('btn1').style.display = 'block';
+        document.getElementById('ssss').innerHTML = msg;
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        // Display error message
+        const msg = `<p style="color:orange;"><i><b><strong>Sorry...!!!</strong> This email is already existing. Unable to submit your form. Please try again.</b></i></p>`;
+        document.getElementById('btn2').style.display = 'block';
+        document.getElementById('ffff').innerHTML = msg;
+        // Reload the page after 5 seconds
+        setTimeout(() => {
+            location.reload();
+        }, 5000);
+    });
+});
+
+
+
+// $('#confirm_test').on('click',function(){
+//         var formData = new FormData($('#add_details')[0]);
+//            var name = ""+document.forms["add_details"]["name"].value+""
+//            var kmat_id = ""+document.forms["add_details"]["kmat_id"].value+""
+//            var gender = ""+document.forms["add_details"]["gender"].value+""
+//            var dob = ""+document.forms["add_details"]["dob"].value+""
+//            var guardian = ""+document.forms["add_details"]["guardian"].value+""
+//            var religion = ""+document.forms["add_details"]["religion"].value+""
+//            var caste = ""+document.forms["add_details"]["caste"].value+""
+//            var qualification = ""+document.forms["add_details"]["qualification"].value+""
+//            var college = ""+document.forms["add_details"]["college"].value+""
+//            var phone = ""+document.forms["add_details"]["phone"].value+""
+//            var mobile = ""+document.forms["add_details"]["mobile"].value+""
+//            var email = ""+document.forms["add_details"]["email"].value+""
+//            var address = ""+document.forms["add_details"]["address"].value+""
+//            var place = ""+document.forms["add_details"]["place"].value+""
+//            var batch = ""+document.forms["add_details"]["batch"].value+""
+
+
+
+           
+
+//       // alert(1);     
+//              $.ajax({
+
+                
+//                 url: "../includes/load_registration.php",
+//                 type: 'POST',
+//                  data: {
+//           name: name,
+//           kmat_id: kmat_id,
+//           gender: gender,
+//           dob: dob,
+//           guardian: guardian,
+//           religion: religion,
+//           caste: caste,
+//           qualification: qualification,
+//           college: college,
+//           phone: phone,
+//           mobile: mobile,
+//           email: email,
+//           address: address,
+//           place: place,
+//           batch: batch
+        
+//         },
+//         error:function()
+//               {
+//                 // alert('hgfd');
+//                   setTimeout(function(){// wait for 5 secs(2)
+//                   location.reload(); // then reload the page.(3)
+//                   }, 5000); 
+//                   var msg='<p style="color:orange";><i><B><strong>  Sorry...!!!</strong>This email is already existing Unable to submit your form..Please try again.<B></i></p>';
+//                 $('#btn2').show();
+//                 $('#ffff').html(msg);
+               
+
+//               },
+
+//                 success: function(data)
+//                 {
+//                      console.log(data);
+//             //     setTimeout(function(){// wait for 5 secs(2)
+//             //   location.reload(); // then reload the page.(3)
+//             //   }, 5000); 
+//             //     var msg='<p style="color:orange";><i><B>You have been successfully registered, Your Application ID is'+data+' <strong>. Kindly pay your Application fee of Rs. 180/- via UPI eyeseduindia@sbi . Thank you...!!!</strong><B></i></p>';
+
+//             //   $('#btn1').show();
+//             // $('#ssss').html(msg);
+            
+//              var msg='<p style="color:orange";><i><B>Thank you for registering with HCT KMAT Coaching! <br></strong> Kindly pay the Registration fee. Whatsapp 8606991777 for the detais</strong><B></i></p>';
+
+//               $('#btn1').show();
+//               $('#ssss').html(msg);          
+
+//                }
+
+
+//             });
+
+//         });
+  
+</script>
+<script>
+$(document).ready(function(){ 
+ $("#btn1").click(function(){   
+    $("#ssss").fadeOut();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){ 
+ $("#btn2").click(function(){   
+    $("#ffff").fadeOut();
+  });
+});
+</script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
