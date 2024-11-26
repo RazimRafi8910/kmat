@@ -29,8 +29,8 @@ app.get('/register', (req, res) => {
     res.render('Registration');
 })
 
-app.listen(PORT, () => {
-    console.log(`server listening on ${PORT}`);
-})
+// app.listen(PORT, () => {
+//     console.log(`server listening on ${PORT}`);
+// })
 
 export default app
