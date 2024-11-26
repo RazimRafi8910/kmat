@@ -23,10 +23,10 @@ export const contactPage = (req, res) => {
 export const registerUser = async (req, res) => {
     const data = req.body;
     try {
-        //const docRef = await firestore.collection('KMATregistrations').add(data);
-        res.status(200).json({ message: 'User added' });
+        const docRef = await firestore.collection('EMETregistrations').add(data);
+        res.status(200).json({ message: 'User added', status:true});
     } catch (error) {
         console.log(error);
-        res.status(500).json({ message: 'server Error'});
+        res.status(500).json({ message: 'server Error',status:false});
     }
 }

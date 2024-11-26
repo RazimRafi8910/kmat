@@ -305,17 +305,10 @@ font-weight: bold
       </div>
 
       <div class="col-md-12 no-padding">
-        <div class="col-md-6 col-sm-12">
-          <label>Applied for</label>
-          <div class="form-group mrg-btm-0">
-            <select name="appliedFor" class="order-type" required="required">
-              <option value="select" selected="selected" disabled="disabled">Select</option>
-              <option value="General">nile</option>      
-              <option value="OBC">nile</option>
-              <option value="SC/ST">nile/ST</option>                               
-            </select>
+          <div class="col-md-6 col-sm-12">
+            <label>College or School name </label>
+            <input type="text" name="college" required="required">
           </div>
-          </div>        
         <div class="col-md-6 col-sm-12">
           <label>Stream studied</label>
           <div class="form-group mrg-btm-0">
@@ -331,11 +324,18 @@ font-weight: bold
     
 
       <div class="col-md-12 no-padding">
-        <div class="col-md-6 col-sm-12">
-          <label>College or School name </label>
-          <input type="text" name="college" required="required">
-        </div>
-        <div class="col-md-6 col-sm-12">
+        <!-- <div class="col-md-6 col-sm-12">
+          <label>Applied for</label>
+          <div class="form-group mrg-btm-0">
+            <select name="appliedFor" class="order-type" required="required">
+              <option value="select" selected="selected" disabled="disabled">Select</option>
+              <option value="General">nile</option>      
+              <option value="OBC">nile</option>
+              <option value="SC/ST">nile/ST</option>                               
+            </select>
+          </div>
+          </div>         -->
+        <!-- <div class="col-md-6 col-sm-12">
           <label>Interested Degree course</label>
           <div class="form-group mrg-btm-0">
             <select name="interestedDegree" class="order-type" required="required">
@@ -345,7 +345,7 @@ font-weight: bold
               <option value="humanities">nile</option>                               
             </select>
           </div>
-          </div>       
+          </div>        -->
         
       </div>
       
@@ -589,8 +589,10 @@ function cancel()
             <td class="mdl-td-c"><span>Category</span></td>
             <td class="left"><span>${form["category"].value}</span></td>
             <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Applied For</span></td>
-            <td class="left"><span>${form["appliedFor"].value}</span></td>
+            <td class="mdl-td-c"><span>School Address</span></td>
+            <td class="left"><span>${form["schoolAddress"].value}</span></td>
+            <td class="mdl-td"></td>
+            
         </tr>
         <tr>
             <td class="mdl-td-c"><span>Stream studied</span></td>
@@ -599,13 +601,6 @@ function cancel()
             <td class="mdl-td-c"><span>Collage or School name</span></td>
             <td class="left"><span>${form["college"].value}</span></td>
         </tr> 
-        <tr>
-            <td class="mdl-td-c"><span>School Address</span></td>
-            <td class="left"><span>${form["schoolAddress"].value}</span></td>
-            <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>Interested Degree course</span></td>
-            <td class="left"><span>${form["interestedDegree"].value}</span></td>
-        </tr>
         <tr>
             <td class="mdl-td-c"><span>NLP Training required</span></td>
             <td class="left"><span>${form["NLP-training"].value}</span></td>
@@ -771,11 +766,9 @@ function cancel()
         district: form["district"].value,
         state: form["state"].value,
         category: form["category"].value,
-        appliedFor: form["appliedFor"].value,
         streamStudied: form["streamStudied"].value,
         collage: form["college"].value,
         schoolAddress: form["schoolAddress"].value,
-        interestedDegree: form["interestedDegree"].value,
         NLPtraining: form["NLP-training"].value,
     };
 
