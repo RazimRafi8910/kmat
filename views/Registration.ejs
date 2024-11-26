@@ -46,7 +46,7 @@ font-weight: bold
     <div class="container-fluid no-padding hd-main">
 
       <div class="container-fluid header-top pd-2-35">
-        <a class="logo-div" href="https://hctkmat.in/">
+        <a class="logo-div" href="/">
           <img src="./assets/logoEMET.jpg" alt="logo" title="HCT KMAT" class="logo">
         </a>
              <div class="sp-menu">
@@ -111,7 +111,7 @@ font-weight: bold
                         <div class="modal-content">
                             <div id="modal-body"> 
                             <!--<button type="button" class="close" onclick="cancel()" >&times;</button>-->
-                            <h1 class="text-center" style="color: blue;">HCT KMAT Registration 2024</h1>
+                            <h1 class="text-center" style="color: blue;">EMET Registration 2024</h1>
                             <div id="test"></div>  
                             <!-- <h4 class="text-center" > Application fee of Rs. 180/- only</h4>-->
                       <div class="text-center"><button class="btn sub-btn reg-btn" type="submit" name="confirm" id="confirm_test">confirm &nbsp;</button>
@@ -348,10 +348,10 @@ font-weight: bold
       
 
       <div class="col-md-12 no-padding">
-       <div class="col-md-6 col-sm-12">
+       <!-- <div class="col-md-6 col-sm-12">
         <label>School Address</label>
         <textarea name="schoolAddress" required="required"></textarea>
-       </div>
+       </div> -->
        <div class="col-md-6 col-sm-12 no-padding">
 
         
@@ -407,7 +407,7 @@ font-weight: bold
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-vision-col">
         <p class="foot-head">EMET SCHOLARSHIP EXAM</p>
         <p class="gen-para ft-vision">EMET SCHOLARSHIP EXAM is a scholarship program is designed to provide financial assistance to students</p>
-        <a class="more transition" href="https://hctkmat.in/about-kmat">Read More &nbsp;<i class="fa fa-chevron-circle-right"></i></a>
+        <a class="more transition" href="/about">Read More &nbsp;<i class="fa fa-chevron-circle-right"></i></a>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-quick">
         <p class="foot-head">Quick Links</p>
@@ -586,9 +586,7 @@ function cancel()
             <td class="mdl-td-c"><span>Category</span></td>
             <td class="left"><span>${form["category"].value}</span></td>
             <td class="mdl-td"></td>
-            <td class="mdl-td-c"><span>School Address</span></td>
-            <td class="left"><span>${form["schoolAddress"].value}</span></td>
-            <td class="mdl-td"></td>
+            
             
         </tr>
         <tr>
@@ -605,7 +603,7 @@ function cancel()
         </tr>
     </table>
     </center>`;
-
+    console.log(x)
     // Insert the HTML into the element with ID 'test'
     document.getElementById('test').innerHTML = x;
 });
@@ -765,7 +763,6 @@ function cancel()
         category: form["category"].value,
         streamStudied: form["streamStudied"].value,
         collage: form["college"].value,
-        schoolAddress: form["schoolAddress"].value,
         NLPtraining: form["NLP-training"].value,
     };
 
