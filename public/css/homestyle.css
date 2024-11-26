@@ -283,6 +283,12 @@ color: white }
     border-right: none !important; border-top:none !important;
 }
 
+.table-nonbg{
+    padding: 0px;
+    border: 1px rgb(210, 209, 209) solid;
+    border-right: none !important; border-top:none !important;
+}
+
 .table-responsive .table {
     margin-bottom: 0px;
 }

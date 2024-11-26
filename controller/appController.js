@@ -8,6 +8,10 @@ export const registerPage = (req, res) => {
     res.render('Registration.ejs')
 }
 
+export const markingSchemePage = (req, res) => {
+    res.render('MarkingScheme.ejs')
+}
+
 export const cutOffPage = (req, res) => {
     res.render('CutOff.ejs')
 }
@@ -22,6 +26,10 @@ export const aboutPage = (req, res) => {
 
 export const contactPage = (req, res) => {
     res.render('Contact.ejs')
+}
+
+export const privacyPage = (req, res) => {
+    res.render('PrivacyPolicy.ejs')
 }
 
 export const registerUser = async (req, res) => {
