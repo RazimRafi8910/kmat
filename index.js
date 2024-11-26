@@ -3,10 +3,14 @@ import express from 'express';
 import dotenv from 'dotenv';
 import appRouter from './routes/appRoutes.js'
 import path from 'path'
+import { fileURLToPath } from 'url';
 
 const app = express()
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT || 5000
 app.set('views', path.join(__dirname, 'views'));
