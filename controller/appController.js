@@ -8,6 +8,10 @@ export const registerPage = (req, res) => {
     res.render('Registration.ejs')
 }
 
+export const cutOffPage = (req, res) => {
+    res.render('CutOff.ejs')
+}
+
 export const examPatterPage = (req, res) => {
     res.render('ExamPattern.ejs')
 }

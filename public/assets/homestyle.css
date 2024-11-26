@@ -310,7 +310,7 @@ color: white }
     border-bottom: 1px dotted #A9A9A9; font-family: 'poppinsmedium';
 }
 
-.message-block{ background-color: rgb(239, 239, 239); width: 60%; padding: 24px 32px; margin: 0 auto; border:1px rgb(210, 209, 209) solid;}
+.message-block{ background-color: #fff; width: 100%; padding-top: 15px; padding: 24px 32px; margin: 0 auto; border:1px rgb(210, 209, 209) solid;}
 .message-block li:last-child{border-bottom: none;}
 
 
