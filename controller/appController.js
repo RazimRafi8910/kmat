@@ -1,7 +1,7 @@
 import firestore from '../service/firebase.js';
 
 export const homePage = ( req, res) => {
-    res.render('index.ejs');
+    res.render('index');
 }
 
 export const registerPage = (req, res) => {
