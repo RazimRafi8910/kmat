@@ -141,6 +141,24 @@ font-weight: bold
  
     <!-- End Header -->
 
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="background: transparent;">
+          <!-- <div class="modal-header"> -->
+            <!-- <h5 class="modal-title" id="imageModalLabel">Welcome!</h5> -->
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+          <div class="modal-body text-center col-lg-12">
+            <img src="./assets/popImage1.jpg" width="380px" alt="Welcome Image" class="img-fluid">
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
     <!--content starts-->
 <div class="container-fluid no-padding ">
@@ -201,9 +219,9 @@ font-weight: bold
         <div class="mis-col">
           <a class="view" href="/" style="color: #24381f;">View Guidelines to Apply for EMET</a>
          <!-- <p class="clrf"> Closing Date:20/05/2020</p> -->
-         <p class="clrf">For any clarification, kindly send "EMET" to&nbsp;&nbsp;<a>8086704111</a></p>
-         <p class="clrf"> <a href=""> EMET Entrance Registration</a></p>
-          <p class="clrf"> <a href="/" > EMET Entrance Notification</a></p> 
+         <p class="clrf">For any Information,<br> kindly send "EMET" to&nbsp;&nbsp;<a>8086704111</a></p>
+         <!-- <p class="clrf"> <a href="/about"> EMET Entrance Registration</a></p>
+          <p class="clrf"> <a href="/about" > EMET Entrance Notification</a></p>  -->
          
           <!-- <p class="clrf"> <a href="https://cee.kerala.gov.in/kmatonline2023/instruction"> KMAT Entrance Registration</a></p>
           <p class="clrf"> <a href="https://cee.kerala.gov.in/kmatonline2023/noti_view/683/Upload1"> KMAT Entrance Notification</a></p>           -->
@@ -258,7 +276,7 @@ font-weight: bold
     <div class="col-md-12 no-padding">
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-vision-col">
         <p class="foot-head">EMET SCHOLARSHIP EXAM  </p>
-        <p class="gen-para ft-vision">KMAT Kerala is the entrance examination for candidates seeking admission to various MBA courses in Kerala.</p>
+        <p class="gen-para ft-vision">EMET SCHOLARSHIP EXAM is a scholarship program is designed to provide financial assistance to students</p>
         <a class="more transition" href="/about">Read More &nbsp;<i class="fa fa-chevron-circle-right"></i></a>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 ft-quick">
@@ -266,8 +284,8 @@ font-weight: bold
         <ul class="quick-link">
           <li><a href="/exam-pattern">Exam Pattern</a></li>
           <li><a href="/">Paper Pattern</a></li>
-          <li><a href="/">Marking Scheme</a></li>
-          <li><a href="/">Cut Off</a></li>
+          <li><a href="/marking-scheme">Marking Scheme</a></li>
+          <li><a href="/cutoff">Cut Off</a></li>
         </ul>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 get-in-touch">
@@ -331,6 +349,13 @@ font-weight: bold
      <script src="./assets/jquery.marquee.min.js.download"></script>
 
      <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if(!sessionStorage.getItem('modal')){
+          // Show the modal when the page loads
+          $('#imageModal').modal('show');
+          sessionStorage.setItem('modal',true)
+        }
+    });
         $(function(){
 
         $('#marquee-vertical').marquee({direction:'vertical', delay:0, timing:25});  
