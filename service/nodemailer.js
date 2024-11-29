@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
   
 
 
-async function main() {
+async function main(receiverEmail,receiverName) {
     // send mail with defined transport object
     try {
         const info = await transporter.sendMail({
