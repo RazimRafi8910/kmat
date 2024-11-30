@@ -1,5 +1,7 @@
 import firestore from '../service/firebase.js';
 import sendEmail from '../service/nodemailer.js';
+import dotenv from 'dotenv';
+dotenv.config()
 
 export const homePage = ( req, res) => {
     res.render('index.ejs');
