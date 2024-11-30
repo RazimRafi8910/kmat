@@ -173,54 +173,32 @@ font-weight: bold
           <tr>
             <!-- 23 Table Headers -->
              
-            <th>name</th>
-            <th>mobile</th>
-            <th>email</th>
-            <th>gender</th>
-            <th>DOB</th>
-            <th>Guardian Name</th>
+            <th>SI no.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Guardian</th>
             <th>Guardian No</th>
-            <th>Religion</th>
-            <th>Caste</th>
-            <th>Income</th>
-            <th>House Name</th>
-            <th>Street</th>
-            <th>Place</th>
-            <th>City</th>
-            <th>PostOffice</th>
-            <th>District</th>
-            <th>State</th>
             <th>Category</th>
+            <th>District</th>
             <th>Stream Studied</th>
-            <th>College</th>
-            <th>NLP training</th>
+            <th>School</th>
           </tr>
         </thead>
         <tbody>
+            <% let count = 1 %>
             <% data.forEach((item) => { %>
           <tr>
+                    <td><%= count++  %></td>
                     <td><%= item.name %></td>
-                    <td><%= item.mobile %></td>
                     <td><%= item.email %></td>
-                    <td><%= item.gender %></td>
-                    <td><%= item.dob %></td>
+                    <td><%= item.mobile %></td>
                     <td><%= item.guardianName %></td>
                     <td><%= item.guardianNumber %></td>
-                    <td><%= item.religion %></td>
-                    <td><%= item.caste %></td>
-                    <td><%= item.income %></td>
-                    <td><%= item.houseName %></td>
-                    <td><%= item.streetName %></td>
-                    <td><%= item.place %></td>
-                    <td><%= item.city %></td>
-                    <td><%= item.pincode %></td>
-                    <td><%= item.postOffice %></td>
-                    <td><%= item.district %></td>
-                    <td><%= item.state %></td>
                     <td><%= item.category %></td>
+                    <td><%= item.district %></td>
                     <td><%= item.streamStudied %></td>
                     <td><%= item.collage %></td>
-                    <td><%= item.NLPtraining %></td>
                   </tr>
                 <% }); %>
             <!-- <% for (let i = 1; i < Object.keys(data[0]).length; i++) { %>

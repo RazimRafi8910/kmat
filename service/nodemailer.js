@@ -14,106 +14,110 @@ async function sendEmail(data) {
     try {
         const info = await transporter.sendMail({
             from: 'EMET SCHOLARSHIP', // sender address
-            to: data.email, // list of receivers
-            subject: "confirmation of your EMET Scholarship registration ", // Subject line
+            to: `${data.email},csa@sunrisecollege.ac.in`, // list of receivers
+            subject: "Confirmation of your EMET Scholarship Registration !!! ", // Subject line
             text: "", // plain text body
             html: `
-              <p>Hello</p>
-                <p> &ensp; ${data.name} registered from EMET SCHOLARSHIP Form The details of the request is shown below <br></p>
-                <table style="border-collapse: collapse; width: 50%;">
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Name</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.name}</td>
+              <p>Dear ${data.name},</p>
+                <p> &ensp; Thank you for registering for the EMET Scholarship Program. We are pleased to confirm the successful submission of your application. <br></p>
+                <p>Here are your registration details: <br></p>
+                <table style="border-collapse: collapse; width: 60%; border-radius: 5px;  font-family: Arial, sans-serif; border: 1px solid #ddd;">
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Name</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.name}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Mobile Number</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.mobile}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Mobile Number</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.mobile}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Email</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.email}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Email</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.email}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">gender</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.gender}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Gender</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.gender}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Date of Birth</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.dob}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Date of Birth</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.dob}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Guardian Name</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.guardianName}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Guardian Name</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.guardianName}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Guardian Number</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.guardianNumber}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Guardian Number</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.guardianNumber}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Religion</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.religion}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Religion</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.religion}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Caste</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.caste}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Caste</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.caste}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Income</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.income}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Income</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.income}</td>
                 </tr> 
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">House Name</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.houseName}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>House Name</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.houseName}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Street Name</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.streetName}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Street Name</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.streetName}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Place</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.place}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Place</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.place}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">City</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.city}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>City</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.city}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Pincode</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.pincode}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Pincode</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.pincode}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Post Office</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.postOffice}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Post Office</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.postOffice}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">District</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.district}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>District</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.district}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">State</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.state}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>State</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.state}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Category</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.category}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Category</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.category}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">Stream Studied</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.streamStudied}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Stream Studied</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.streamStudied}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">State</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.state}</td>
+                <tr style="background-color: #ffffff;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>College</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.collage}</td>
                 </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">College</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.collage}</td>
-                </tr>
-                <tr>
-                    <td  style="border: 1px solid black; padding: 8px;">State</td>
-                    <td  style="border: 1px solid black; padding: 8px;">${data.NLPtraining}</td>
+                <tr style="background-color: #f9f9f9;">
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>NLP training</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.NLPtraining}</td>
                 </tr>
                 </table>
+                <p>
+                Finally, please click on the following link: wa.me/918606708444?text=EMET_Payment to obtain the QR code. Kindly proceed to pay the application fee of ₹140 using the QR code and follow the subsequent instructions as directed by the office.
+                <br></p>
+                <p>For more information, please contact us at <strong>8086704111</strong> or <strong>8086704222</strong>.</p>
+                <p>Regards,</p>
+                <p>Registration Desk</p>
+                <p>EMET Scholarship</p>
             `
           });
     } catch (error) {
