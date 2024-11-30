@@ -19,7 +19,7 @@ const SECRETKEYS = {
 
 admin.initializeApp({
     credential: admin.credential.cert(SECRETKEYS),
-    databaseURL: "https://kmat-da059.firebaseio.com", // Replace <your-project-id> with your Firebase project ID
+    databaseURL: "https://kmat-da059.firebaseio.com",
 });
 
 

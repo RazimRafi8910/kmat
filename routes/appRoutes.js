@@ -1,5 +1,5 @@
 import express from 'express';
-import { aboutPage, contactPage, cutOffPage, examPatterPage, homePage, markingSchemePage, privacyPage, registerPage, registerUser } from '../controller/appController.js';
+import { aboutPage, contactPage, cutOffPage, examPatterPage, getRegiesterdData, homePage, markingSchemePage, privacyPage, registerPage, registerUser } from '../controller/appController.js';
 
 const router = express.Router()
 
@@ -15,5 +15,7 @@ router.get('/', homePage);
 router.get('/registration', registerPage);
 router.post('/register', registerUser);
 
+// admin
+router.get('/admin/getData/:id', getRegiesterdData);
 
 export default router

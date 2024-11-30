@@ -1,4 +1,5 @@
 import firestore from '../service/firebase.js';
+import sendEmail from '../service/nodemailer.js';
 
 export const homePage = ( req, res) => {
     res.render('index.ejs');
@@ -34,11 +35,33 @@ export const privacyPage = (req, res) => {
 
 export const registerUser = async (req, res) => {
     const data = req.body;
+    // send email to registered candidate
+    sendEmail(data);
     try {
         const docRef = await firestore.collection('EMETregistrations').add(data);
         res.status(200).json({ message: 'User added', status:true});
     } catch (error) {
         console.log(error);
         res.status(500).json({ message: 'server Error',status:false});
+    }
+}
+
+export const getRegiesterdData = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const adminID = process.env.ADMIN_ID;
+        if (adminID != id) {
+            return res.status(401).json({ message: "invalid id" });
+        }
+        const dbRef = firestore.collection('EMETregistrations');
+        const snapShot = await dbRef.get();
+        const data = snapShot.docs.map((doc) => {
+            return doc.data()
+        })
+        res.render('viewData.ejs',{data})
+        // return res.status(200).json({message:'done',datas:data})
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: 'server Error',status:false})
     }
 }

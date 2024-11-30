@@ -374,7 +374,10 @@ font-weight: bold
        </div>
       </div>
 
-        <div class="col-sm-12 col-sm-12 text-center"><button class="btn sub-btn reg-btn btn-main" type="submit" name="submit" id="add">Submit &nbsp;<i class="fa fa-chevron-circle-right"></i></button></div>                                    
+        <div class="col-sm-12 col-sm-12 text-center">
+          <button class="btn sub-btn reg-btn btn-main" type="submit" name="submit" id="add">Submit &nbsp;<i class="fa fa-chevron-circle-right"></i></button>
+          <button class="btn sub-btn hidden btn-main" type="submit" name="submit" id="load">Submiting . . .</i></button>
+        </div>                                    
       </form>
     </div>
 
@@ -490,6 +493,10 @@ function cancel()
     // Prevent default form submission and handle the form data
     document.getElementById('add_details').addEventListener('submit', function (event) {
         event.preventDefault();
+
+        // change submit button
+        document.getElementById('load').classList.replace('hidden','block');
+        document.getElementById('add').classList.add('hidden');
         // Show the alert element
         document.getElementById('ALERT').style.display = 'block';
     });
@@ -608,131 +615,6 @@ function cancel()
     document.getElementById('test').innerHTML = x;
 });
 
-
-//   $('#add').on('click',function()
-//   {
-//     // alert(1);
-//     $(() => $('#add_details').submit(event => {
-//   event.preventDefault();
-//   // alert('Form is valid!');
-//    $('#ALERT').show();
-// }));
-   
-//     // $('#ALERT').show();
-
-//  var formData = new FormData($('#add_details')[0]);
-//  var x = `
-
-//    <center>
-//    <style>
-// table {
- 
-//   width: 100%;
-// }
-
-// .mdl-td-c{
-//   padding: 10px;
-//   text-align: left;
-//   border-bottom: 1px solid #ddd;
-// }
-// .left{
-//   padding: 10px;
-//   text-align: left;
-//   border-bottom: 1px solid #ddd;
-// }
-// .mdl-td{
-//   padding: 10px;
-//   text-align: left;
-//   border-bottom: 1px solid #ffff;
-// }
-
-
-// </style>
-   
-// <table>
-       
-//        <tr>
-//        <td class="mdl-td-c"><span>Name of the Student</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["name"].value+`<span></td>
-//       <td class="mdl-td"></td>
-     
-//       <td class="mdl-td-c"><span>KMAT Application ID</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["kmat_id"].value+`<span></td>
-//       </tr>
-//         <tr> 
-//       <td class="mdl-td-c"><span>Gender</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["gender"].value+`<span></td>  
-//         <td class="mdl-td"></td>
-//       <td class="mdl-td-c"><span>Date of Birth</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["dob"].value+`<span></td>
-//       </tr>
-//        <tr>
-       
-//       <td class="mdl-td-c"><span>Father/Guardian's Name</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["guardian"].value+`<span></td>
-//       <td class="mdl-td"></td>
-//       <td class="mdl-td-c"><span>Religion</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["religion"].value+`<span></td>
-      
-//        </tr>
-       
-//        <tr>
-//        <td class="mdl-td-c"><span>Whether belongs to SC/ST/OBC</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["caste"].value+`<span></td>
-//        <td class="mdl-td"></td>
-//         <td class="mdl-td-c"><span>Qualification/Class in which you are studying</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["qualification"].value+`<span></td> 
-//     </tr>
-//       <tr>
-
-//       <td class="mdl-td-c"><span>Name of the Institute & University </span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["college"].value+`<span></td>
-//       <td class="mdl-td"></td>
-//        <td class="mdl-td-c"><span>Phone Number (Landline)</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["phone"].value+`<span></td>
-//        </tr>
-//           <tr>
-
-//        <td class="mdl-td-c"><span>Phone Number (Mobile)</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["mobile"].value+`<span></td>
-//     <td class="mdl-td"></td>
-//        <td class="mdl-td-c"><span>Email Id</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["email"].value+`<span></td>   
-//        </tr>
-//        <tr>
-//        <td class="mdl-td-c"><span>Address for Correspondence</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["address"].value+`<span></td>
-//       <td class="mdl-td"></td>
-//        <td class="mdl-td-c"><span>Select the place you prefer for coaching</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["place"].value+`<span></td>
-//       </tr>
-//        <td class="mdl-td-c"><span>Select batch</span></td>
-      
-//       <td class="left"><span>`+document.forms["add_details"]["batch"].value+`<span></td>
-//        <td class="mdl-td"></td>   
-//        </tr>
-      
-//       <table></center>`;
-//                                     // alert(x);
-
-//   $('#test').html(x);
- 
-//   });
-
 </script>
 <script type="text/javascript">
    
@@ -781,6 +663,8 @@ function cancel()
         const msg = `<p style="color:orange;"><i><b>your registration is success, <br> Thank you for registering with EMET!<br></b></i></p>`;
         document.getElementById('btn1').style.display = 'block';
         document.getElementById('ssss').innerHTML = msg;
+        document.getElementById('load').classList.replace('block','hidden');
+        document.getElementById('add').classList.add('block');
         setTimeout(() => {
             location.reload();
         }, 5000);
