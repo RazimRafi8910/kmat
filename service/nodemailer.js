@@ -8,7 +8,7 @@ const transporter = nodemailer.createTransport({
     pass: "ujorzndtvskzbuwc",
   },
 });
-
+//csa@sunrisecollege.ac.in
 async function sendEmail(data) {
     // send mail with defined transport object
     try {
@@ -107,12 +107,12 @@ async function sendEmail(data) {
                     <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.collage}</td>
                 </tr>
                 <tr style="background-color: #f9f9f9;">
-                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>NLP training</strong></td>
-                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.NLPtraining}</td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:40%;"><strong>Course Interested</strong></td>
+                    <td  style="border: 1px solid #ddd; padding: 8px; width:60%;">${data.courseInterested}</td>
                 </tr>
                 </table>
                 <p>
-                Finally, please click on the following link: wa.me/918606708444?text=EMET_Payment to obtain the QR code. Kindly proceed to pay the application fee of ₹140 using the QR code and follow the subsequent instructions as directed by the office.
+                Finally, please click on the following link: wa.me/918086704555?text=EMET_Payment to obtain the QR code. Kindly proceed to pay the application fee of ₹60 using the QR code and follow the subsequent instructions as directed by the office.
                 <br></p>
                 <p>For more information, please contact us at <strong>8086704111</strong> or <strong>8086704222</strong>.</p>
                 <p>Regards,</p>

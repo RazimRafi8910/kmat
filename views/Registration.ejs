@@ -357,13 +357,15 @@ font-weight: bold
         
     
         <div class="col-md-12 col-sm-12">
-          <label>NLP training required</label>
+          <label>Course Interested</label>
           <div class="form-group mrg-btm-0">
-            <select name="NLP-training" class="order-type" required="required">
+            <select name="courseInterested" class="order-type" required="required">
               <option value="select" selected="selected" disabled="disabled">Select</option>
              
-              <option value="yes"> Yes </option>      
-             <option value="no"> No </option>              
+              <option value="BCA AI"> BCA AI </option>    
+              <option value="BBA Logistics & Supply Chain"> BBA Logistics & Supply Chain</option>
+              <option value="B.Com Data Analytics"> B.Com Data Analytics </option>    
+              <option value="B.Com CMA"> B.Com CMA </option>             
               
             </select>
             
@@ -604,8 +606,8 @@ function cancel()
             <td class="left"><span>${form["college"].value}</span></td>
         </tr> 
         <tr>
-            <td class="mdl-td-c"><span>NLP Training required</span></td>
-            <td class="left"><span>${form["NLP-training"].value}</span></td>
+            <td class="mdl-td-c"><span>courseInterested</span></td>
+            <td class="left"><span>${form["courseInterested"].value}</span></td>
             <td class="mdl-td"></td>   
         </tr>
     </table>
@@ -645,7 +647,7 @@ function cancel()
         category: form["category"].value,
         streamStudied: form["streamStudied"].value,
         collage: form["college"].value,
-        NLPtraining: form["NLP-training"].value,
+        courseInterested: form["courseInterested"].value,
     };
 
     // Make the POST request with fetch
