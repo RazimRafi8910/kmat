@@ -39,8 +39,10 @@ export const registerUser = async (req, res) => {
     const data = req.body;
     // send email to registered candidate
     sendEmail(data);
+    const date = new Date();
     try {
-        const docRef = await firestore.collection('EMETregistrations').add(data);
+        const docRef = await firestore.collection('EMETregistrations').add({...data, registerDate: date });
+        console.log('Document written with ID: ', docRef.id);
         res.status(200).json({ message: 'User added', status:true});
     } catch (error) {
         console.log(error);
@@ -55,6 +57,8 @@ export const getRegiesterdData = async (req, res) => {
         if (adminID != id) {
             return res.status(401).json({ message: "invalid id" });
         }
+        console.log('user logged in admin, ip:', req.ip);
+        // get all the data from firestore
         const dbRef = firestore.collection('EMETregistrations');
         const snapShot = await dbRef.get();
         const data = snapShot.docs.map((doc) => {

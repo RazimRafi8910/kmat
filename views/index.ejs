@@ -15,15 +15,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="SRV InfoTech">
-    <meta name="copyright" content="SRV InfoTech">
+    <meta name="author" content="EXEGROUP">
+    <meta name="copyright" content="EXEGROUP">
     <meta name="cache-control" content="no-cache">
     <meta name="distribution" content="Global">
     <meta name="document-distribution" content="Global">
     <meta name="document-rating" content="General">
     <meta name="document-rights" content="Public">
     <meta name="document-state" content="static">
-    <meta name="publisher" content="SRV InfoTech">
+    <meta name="publisher" content="EXEGROUP">
     <meta name="rating" content="General">
     <meta name="expires" content="never">
     <meta name="resource-type" content="General">
@@ -36,13 +36,13 @@
     <meta property="og:description" content="">
     <meta property="og:type" content="">
     <meta property="og:image" content="">
-    <meta property="og:site_name" content="HCT KMAT">
+    <meta property="og:site_name" content="EMET SCHOLARSHIP">
     <meta property="og:street-address" content="Pavanoormotta">
     <meta property="og:locality" content="Mayyil ">
     <meta property="og:region" content="Kerala">
     <meta property="og:country-name" content="India">
     <meta property="og:email" content="">
-    <meta property="og:phone_number" content="8606991888">
+    <meta property="og:phone_number" content="8086704555">
 
     <title>EMET SCHOLARSHIP | Home</title>
     
@@ -86,12 +86,11 @@ font-weight: bold
   </style>
   <header>
     <div class="container-fluid no-padding hd-main">
-
-      <div class="container-fluid header-top pd-2-35">
+        <div class="container-fluid header-top pd-2-35">
         <a class="logo-div" href="/">
-          <img src="./assets/newLogoEMET.png" width="260" alt="logo" title="HCT KMAT" class="logo">
+          <img src="./assets/newLogoEMET.png" width="260" alt="logo" title="EMET" class="logo">
         </a>
-             <div class="sp-menu">
+        <div class="sp-menu">
           <a class="reg-btn btn-main" href="/registration"><i class="fa fa-pencil"></i> Register</a>
         </div>
         <!--<div class="sp-menu">-->
@@ -110,7 +109,7 @@ font-weight: bold
         <nav class="navbar navbar-inverse">
           <div class="container-fluid nav-cont no-padding">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <button type="button" class="text-white navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
@@ -141,24 +140,24 @@ font-weight: bold
  
     <!-- End Header -->
 
-    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content" style="background: transparent;">
-          <!-- <div class="modal-header"> -->
-            <!-- <h5 class="modal-title" id="imageModalLabel">Welcome!</h5> -->
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div> -->
-          <div class="modal-body text-center col-lg-12">
-            <img src="./assets/popImage1.jpg" width="380px" alt="Welcome Image" class="img-fluid">
-          </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-        </div>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+      
+      <!-- Transparent header with right-aligned close button -->
+      <div class="py-0 modal-header justify-content-end" style="background: transparent; border: none;padding-bottom: 2px; display: flex; justify-content: end;">
+        <button type="button" class="btn-close" onclick="handleCloseModal()">X</button>
       </div>
+      
+      <div class="modal-body text-center py-0" style="background: transparent; border: none; padding-top: 0;">
+        <img src="./assets/popImage1.jpg" alt="Welcome Image" class="img-fluid" style="max-width: 100%; width: 340px;">
+      </div>
+
     </div>
+  </div>
+</div>
+
+
 
     <!--content starts-->
 <div class="container-fluid no-padding ">
@@ -361,6 +360,11 @@ font-weight: bold
         $('#marquee-vertical').marquee({direction:'vertical', delay:0, timing:25});  
 
       });
+
+      handleCloseModal = () => {
+        $('#imageModal').modal('hide');
+        sessionStorage.setItem('modal',true)
+      }
       </script>
 
 

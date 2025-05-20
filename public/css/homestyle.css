@@ -24,6 +24,17 @@ header{
     transition: all 0.2s ease-in-out;
 }
 
+.popImage {
+  width: 340px;
+}
+
+@media (min-width: 768px) {
+  .popImage {
+    width: 450px; /* or any size you prefer on larger screens */
+  }
+}
+
+
 .reg-btn i{padding-right: 5px}
 
 .btn-main:focus, .btn-main:hover {
@@ -62,7 +73,10 @@ line-height: 20px}
 
 
 .navbar-inverse .navbar-toggle .icon-bar 
-{background-color: #195CA4;}
+{
+    /* background-color: #195CA4; */
+    background-color: #dcdcdc;
+}
 
 .navbar-inverse .navbar-toggle 
 {border:none;}
@@ -521,7 +535,8 @@ label {font-size: 12px;}
 @media (max-width: 425px){
 .reg-btn{padding: 10px 10px 6px !important; margin: 13px 6px;}
 .logo{width: 164px;}
-.logo-div{padding-right: 0px; margin-top: 7px;width:100%;}
+/* .logo-div{padding-right: 0px; margin-top: 7px;width:100%;} */
+.logo-div{padding-right: 0px; margin-top: 7px;}
 .ft-vision-col{display: none;}
 .ft-quick, .get-in-touch, .ft-address, .contact-col {width: 100% ; text-align: center;}
 .ft-quick, .get-in-touch{margin-bottom: 15px}
